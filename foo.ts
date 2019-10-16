@@ -1,10 +1,14 @@
 import Vue from "vue";
 
-export function Foo(name: string) {
+export function Foo(message: string) {
+    
+    let jsMessage = document.getElementById("message") as HTMLElement;
+    jsMessage.innerHTML = message;
+    
     const app = new Vue({
         el: "#app",
         data: {
-            name: name
+            message: message
         },
     });    
     console.log("[Foo] started!");
