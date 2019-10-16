@@ -1,1 +1,6 @@
-# parcel-global-var-test
+# Parcel + TypeScript + Vue 
+
+
+`npm install`
+
+`npm run dev`
