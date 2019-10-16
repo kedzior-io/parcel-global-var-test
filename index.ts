@@ -1,2 +1,3 @@
-export * from  "./foo";
-console.log("[Parcel] success");
+export * from  "./Foo/foo";
+
+

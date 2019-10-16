@@ -6,12 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
+
 <body>
-  <h1>JS: <span id="message"></span></h1>  
-  <h1>Vue: <span id="app">{{message}}</span></h1>
+  <div id="app1"></div>
+  <hr/>
+  <div id="app2"><my-component></my-component></div>
+  <hr/>
 </body>
+
 <script src="dist/index.js"></script>
+
 <script>
-  App.Foo("Hello!");
+  App.InitSingleFileComponents("Vue Single File Component");
+  App.InitXTemplate("Vue Single X-template");
 </script>
+
+<script type="text/x-template" id="my-x-template">
+  <pre style="color:#00ff00">Hellooooooooooooooo</pre>  
+</script>
+
 </html>
