@@ -1,2 +1,2 @@
-import "foo.ts";
+import "./foo";
 console.log("[Parcel] success");
