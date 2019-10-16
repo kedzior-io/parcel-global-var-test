@@ -1,12 +1,3 @@
 import "./foo";
-
-/*
-// works without import
-export const bar = 5;
-
-export function Foo() {
-    console.log("Foo");
-}
-*/
-
+export * from  "./foo";
 console.log("[Parcel] success");
