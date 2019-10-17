@@ -15,10 +15,18 @@ import Foo from './Foo.vue';
 export function InitXTemplate(myMessage: string) {
 
     Vue.component("my-component", {
+        props: ["message"],
         template: "#my-x-template",
+        data() {
+            return {
+                message: this.message,
+            }        
     });
 
     new Vue({ 
-        el:'#app2'        
+        el:'#app2',
+        data: {
+            message: myMessage,
+        },             
     })
 }

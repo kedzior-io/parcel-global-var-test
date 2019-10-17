@@ -8,21 +8,26 @@
 </head>
 
 <body>
+  <p>Vue Single File Component</p>
   <div id="app1"></div>
   <hr/>
-  <div id="app2"><my-component></my-component></div>
+  <p>Vue x-template</p>
+  <div id="app2"><my-component :message="message"></my-component></div>
   <hr/>
 </body>
 
 <script src="dist/index.js"></script>
 
 <script>
-  App.InitSingleFileComponents("Vue Single File Component");
-  App.InitXTemplate("Vue Single X-template");
+  document.addEventListener('DOMContentLoaded', (event) => {
+    App.InitSingleFileComponents("Hello from single file component");
+    App.InitXTemplate("Hello from x-template!");
+  });
+
 </script>
 
 <script type="text/x-template" id="my-x-template">
-  <pre style="color:#00ff00">That doesn't work.</pre>  
+  <pre style="color:#0000ff">{{message}}</pre>  
 </script>
 
 </html>
